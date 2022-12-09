@@ -4,10 +4,7 @@ import { useEffect, useState } from 'react';
 
 /*import Data from '../components/Data';*/
 
-<<<<<<< HEAD
-=======
 
->>>>>>> de6666511fe1fd846888fe64b0a1d20701f647e1
 import Image from 'next/image'
 import Images from '../components/Images'
 
@@ -32,15 +29,13 @@ export default function Home({data}) {
     });
   },[]);*/
 
-<<<<<<< HEAD
-=======
-    
->>>>>>> de6666511fe1fd846888fe64b0a1d20701f647e1
+
+
 
   return (
 <div className='font-mono  lg:grid grid-cols-2 gap-4  align-middle overflow-hidden  '>
      
-<<<<<<< HEAD
+
      <motion.div className='lg:mt-36'
      
      
@@ -58,7 +53,7 @@ export default function Home({data}) {
     transition={{
       duration:1.5,
     }}
-=======
+
     <motion.div className='lg:mt-36'
     
     
@@ -106,7 +101,7 @@ export default function Home({data}) {
      </motion.div>
 
 
->>>>>>> de6666511fe1fd846888fe64b0a1d20701f647e1
+
   
      >
        <h1 className='text-xl pb-5   first-letter:text-5xl first-letter:text-cyan-700   underline underline-offset-4'>Let's Train</h1>
@@ -136,7 +131,7 @@ export default function Home({data}) {
  
       <motion.div className=' sm:mt-4  '
       
-<<<<<<< HEAD
+
       
       initial={{
  
@@ -189,17 +184,17 @@ export default function Home({data}) {
        
       </motion.div>
       </div>
-=======
+
      </motion.div>
      </div>
     
->>>>>>> de6666511fe1fd846888fe64b0a1d20701f647e1
+
      
       
 
 
   )
-<<<<<<< HEAD
+
 
    } ;
 
@@ -210,10 +205,7 @@ export default function Home({data}) {
 
 
 
-export const getStaticProps=async()=>{
 
-=======
-};
 
 
 export const getStaticProps=async()=>{
@@ -226,14 +218,5 @@ const res = await fetch('http://numbersapi.com/1/30/date?json');
       data
     }
   }
-<<<<<<< HEAD
-}
-=======
-
-}
   
-        
-
-  
->>>>>>> de6666511fe1fd846888fe64b0a1d20701f647e1
-
+}
