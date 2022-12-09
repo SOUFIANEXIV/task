@@ -159,7 +159,7 @@ const res = await fetch('http://numbersapi.com/1/30/date?json');
     }
   }
 
-
+}
   
         
 
