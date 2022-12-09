@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import axios from 'axios'
 import { useEffect, useState } from 'react';
-import Data from '../components/Data';
 import Image from 'next/image'
 import Images from '../components/Images'
 
@@ -145,5 +144,8 @@ export const getStaticProps=async()=>{
       console.log(error);
   
     });
-  },[]);*/
+  },[]);
+  import Data from '../components/Data';
+
+  */
 
