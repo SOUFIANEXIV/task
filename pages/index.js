@@ -119,8 +119,8 @@ export default function Home({data}) {
   )
 }
 
-export async function getStaticProps () {
-  const res = await fetch('http://numbersapi.com/1/30/date?json');
+export const getStaticProps=async()=>
+const res = await fetch('http://numbersapi.com/1/30/date?json');
   const data = await res.json();
   return {
     props :{
