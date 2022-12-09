@@ -37,7 +37,7 @@ export default function Home({data}) {
    
       
        <p className=' mb-2 ' > {data.text}   </p> 
- <sapn  className='mb-4'> {data.type}:</span>
+ <span  className='mb-4'> {data.type}:</span>
        <p className='inline-block' > {data.year} Year,</p>
        <p>Number: {data.number}</p>
 <p>  {!data.found ? (
