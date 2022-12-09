@@ -119,7 +119,7 @@ export default function Home({data}) {
   )
 }
 
-export async getStaticProps () {
+export async function getStaticProps () {
   const res = await fetch('http://numbersapi.com/1/30/date?json');
   const data = await res.json();
   return {
