@@ -47,17 +47,19 @@ export default function Home({data}) {
    transition={{
      duration:1.5,
    }}
-    
-    
-    
-    >
-     /*{<Data data={data} /> }*/
+         >
+   
       
-       <p> {data.text}   </p> 
-       <p> {data.year}</p>
-       <p> {data.number}</p>
-       <p>  {data.found}</p>
-       <p> {data.type}</p>
+       <p className=' mb-2 ' > {data.text}   </p> 
+ <sapn  className='mb-4'> {data.type}:</span>
+       <p className='inline-block' > {data.year} Year,</p>
+       <p>Number: {data.number}</p>
+<p>  {!data.found ? (
+        <span  className='text-red-600'>Not found</span>
+       ):(
+        <span>found</span>
+       )}</p>
+      
 
      <Images/>
 
@@ -145,5 +147,5 @@ export const getStaticProps=async()=>{
   }
 }
   
-        
+        /*  /*{<Data data={data} /> }*/
 
