@@ -14,7 +14,7 @@ export default function Home() {
   const[data,setData]=useState({});
 
 
-  useEffect(()=>{
+  /*useEffect(()=>{
   
      axios.get('http://numbersapi.com/1/30/date?json')
     .then((response => {
@@ -24,7 +24,7 @@ export default function Home() {
       console.log(error);
   
     });
-  },[]);
+  },[]);*/
   
 
   return (
@@ -51,7 +51,13 @@ export default function Home() {
     
     
     >
-     {<Data data={data} /> }
+     /*{<Data data={data} /> }*/
+      
+       <p> {data.text}   </p> 
+       <p> {data.year}</p>
+       <p> {data.number}</p>
+       <p>  {data.found}</p>
+       <p> {data.type}</p>
 
      <Images/>
 
@@ -129,7 +135,7 @@ export default function Home() {
   )
 }
 
-/*export const getStaticProps=async()=>{
+export const getStaticProps=async()=>{
   const res = await fetch('http://numbersapi.com/1/30/date?json');
   const data = await res.json();
   return {
@@ -138,10 +144,6 @@ export default function Home() {
     }
   }
 }
-   <p> {data.text}   </p> 
-       <p> {data.year}</p>
-       <p> {data.number}</p>
-       <p>  {data.found}</p>
-       <p> {data.type}</p>
+  
         
-*/
+
