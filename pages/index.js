@@ -8,10 +8,10 @@ import Images from '../components/Images'
 
 import {motion} from 'framer-motion';
 
-export default function Home() {
+export default function Home({data}) {
 
 
-  const[data,setData]=useState({});
+  /*const[data,setData]=useState({});*/
 
 
   /*useEffect(()=>{
