@@ -209,7 +209,7 @@ export default function Home({data}) {
 
 
 export const getStaticProps=async()=>{
->>>>>>> de6666511fe1fd846888fe64b0a1d20701f647e1
+
 const res = await fetch('http://numbersapi.com/1/30/date?json');
 
   const data = await res.json();
