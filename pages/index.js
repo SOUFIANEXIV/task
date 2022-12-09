@@ -11,20 +11,7 @@ import {motion} from 'framer-motion';
 export default function Home({data}) {
 
 
-  /*const[data,setData]=useState({});*/
-
-
-  /*useEffect(()=>{
   
-     axios.get('http://numbersapi.com/1/30/date?json')
-    .then((response => {
-     setData(response.data);
-     
-    }), error => {
-      console.log(error);
-  
-    });
-  },[]);*/
   
 
   return (
@@ -86,10 +73,6 @@ export default function Home({data}) {
        duration:1.5,
      }}
      
-
-
-
-     
      
      >
        <Image
@@ -125,7 +108,7 @@ export default function Home({data}) {
      >
       
      </motion.div>
-     <div></div>
+     <div>
     
      
 
@@ -133,7 +116,7 @@ export default function Home({data}) {
 
 
     
-</div>
+
   )
 }
 
@@ -145,7 +128,22 @@ export const getStaticProps=async()=>{
       data
     }
   }
-}
+};
   
         /*  /*{<Data data={data} /> }*/
+
+/*const[data,setData]=useState({});*/
+
+
+  /*useEffect(()=>{
+  
+     axios.get('http://numbersapi.com/1/30/date?json')
+    .then((response => {
+     setData(response.data);
+     
+    }), error => {
+      console.log(error);
+  
+    });
+  },[]);*/
 
