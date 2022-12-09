@@ -9,6 +9,8 @@ import { BsFillBookFill } from "react-icons/bs";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {motion} from 'framer-motion'
+import { BsGithub} from "react-icons/bs";
+
 
 
 
@@ -74,20 +76,20 @@ transition={{
 
 <div className={`mx-auto font-semibold  md:flex md:items-center w-full md:pb-0 pb-12 absolute md:static bg-white md:z-auto left-0 w-full    md:w-auto md:pl-0 pl-9  transition-all duration-500 ease-in ${open ? 'top-[54px] ':'top-[-490px]'} scroll-smooth`} >
 
-<Link href='/' className='px-5 md:ml-8 text-lg md:my-0 my-7 duration-500 block '>
+<Link href='/'   onClick={()=>setOpen(false)}className='px-5 md:ml-8 text-lg md:my-0 my-7 duration-500 block '>
     < AiFillHome className='inline-block mb-2 hover:animate-bounce mr-1  ' size={20}/>
     Home
 </Link>
-<Link href='about' className='px-5 md:ml-8 text-xl md:my-0 my-7 duration-500 block'>
+<Link href='/about'  onClick={()=>setOpen(false)} className='px-5 md:ml-8 text-lg md:my-0 my-7 duration-500 block'>
     < BsFillBookFill className='inline-block mb-2 hover:animate-bounce mr-1 ' size={20}/>
    About 
 </Link>
-<Link href='courses' className='px-5 md:ml-8 text-xl md:my-0 my-7 duration-500 block' >
+<Link href='/courses'  onClick={()=>setOpen(false)} className='px-5 md:ml-8 text-lg md:my-0 my-7 duration-500 block' >
     < MdFitnessCenter className='inline-block mb-2 hover:animate-bounce mr-1 ' size={20}/>
     Exercises
 </Link>
 
-<Link href='/galerie'  className='px-5  md:ml-8 text-xl md:my-0 my-7 duration-500 block'>
+<Link href="/galerie"  onClick={()=>setOpen(false)}  className='px-5  md:ml-8 text-lg md:my-0 my-7 duration-500 block'>
     < RiTeamFill className='inline-block mb-2 hover:animate-bounce mr-1 ' size={20}/>
  Galeries
 </Link>
@@ -114,7 +116,7 @@ theme="light"
    <main className='container m-auto  px-4'>{children}   </main> 
 
     <footer className="flex h-10 justify-center items-center shadow-inner">
-    <p>Copyright © 2022</p>
+    <Link href='https://github.com/SOUFIANEXIV/task' target='_blank'>Copyright © 2022 source code <BsGithub className='inline-block mb-1'/></Link>
     </footer>
     </div>
   </>
