@@ -1,20 +1,20 @@
 import Head from 'next/head'
 import axios from 'axios'
 import { useEffect, useState } from 'react';
-import Data from '../components/Data';
+/*import Data from '../components/Data';*/
 import Image from 'next/image'
 import Images from '../components/Images'
 
 
 import {motion} from 'framer-motion';
 
-export default function Home() {
+export default function Home({data}) {
 
 
-  const[data,setData]=useState({});
+  /*const[data,setData]=useState({});*/
 
 
-  useEffect(()=>{
+  /*useEffect(()=>{
   
      axios.get('http://numbersapi.com/1/30/date?json')
     .then((response => {
@@ -24,7 +24,7 @@ export default function Home() {
       console.log(error);
   
     });
-  },[]);
+  },[]);*/
   
 
   return (
@@ -51,7 +51,20 @@ export default function Home() {
     
     
     >
-     {<Data data={data} /> }
+      <h1 className='text-xl pb-5   first-letter:text-5xl first-letter:text-cyan-700   underline underline-offset-4'>Let's Train</h1>
+     <p className=' mb-2 '> {data.text}   </p> 
+
+       
+<span className='mb-4'> {data.type}:</span>
+<p className='inline-block'> {data.year} Year,
+
+</p>
+<p> Number:{data.number},</p>
+<p>  {!data.found ? (
+<span  className='text-red-600'>Not found</span>
+):(
+<span>found</span>
+)}</p>
 
      <Images/>
 
@@ -129,7 +142,7 @@ export default function Home() {
   )
 }
 
-/*export const getStaticProps=async()=>{
+export const getStaticProps=async()=>{
   const res = await fetch('http://numbersapi.com/1/30/date?json');
   const data = await res.json();
   return {
@@ -138,10 +151,5 @@ export default function Home() {
     }
   }
 }
-   <p> {data.text}   </p> 
-       <p> {data.year}</p>
-       <p> {data.number}</p>
-       <p>  {data.found}</p>
-       <p> {data.type}</p>
+  
         
-*/
