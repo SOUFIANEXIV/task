@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import axios from 'axios'
 import { useEffect, useState } from 'react';
-<<<<<<< HEAD
+
 /*import Data from '../components/Data';*/
-=======
->>>>>>> e9e4b7b20f4cff9fb9f5840299b2d47b18fe72dc
+
+
 import Image from 'next/image'
 import Images from '../components/Images'
 
@@ -14,7 +14,6 @@ import {motion} from 'framer-motion';
 export default function Home({data}) {
 
 
-<<<<<<< HEAD
   /*const[data,setData]=useState({});*/
 
 
@@ -29,10 +28,8 @@ export default function Home({data}) {
   
     });
   },[]);*/
-=======
-  
->>>>>>> e9e4b7b20f4cff9fb9f5840299b2d47b18fe72dc
-  
+
+    
 
   return (
     <div className='font-mono  lg:grid grid-cols-2 gap-4  align-middle overflow-hidden  '>
@@ -54,7 +51,7 @@ export default function Home({data}) {
    transition={{
      duration:1.5,
    }}
-<<<<<<< HEAD
+
     
     
     
@@ -73,11 +70,11 @@ export default function Home({data}) {
 ):(
 <span>found</span>
 )}</p>
-=======
+
         
    
 
->>>>>>> e9e4b7b20f4cff9fb9f5840299b2d47b18fe72dc
+
 
      <Images/>
 
@@ -139,7 +136,7 @@ export default function Home({data}) {
      >
       
      </motion.div>
-     <div>
+     </div>
     
      
 
@@ -149,46 +146,22 @@ export default function Home({data}) {
     
 
   )
-}
+};
 
-<<<<<<< HEAD
+
 export const getStaticProps=async()=>{
-  const res = await fetch('http://numbersapi.com/1/30/date?json');
-=======
-export const getStaticProps=async()=>
 const res = await fetch('http://numbersapi.com/1/30/date?json');
->>>>>>> e9e4b7b20f4cff9fb9f5840299b2d47b18fe72dc
+
   const data = await res.json();
   return {
     props :{
       data
     }
   }
-<<<<<<< HEAD
-}
+
+
   
         
-=======
-};
+
   
-         /*{<Data data={data} /> }*/
 
-/*const[data,setData]=useState({});*/
-
-
-  /*useEffect(()=>{
-  
-     axios.get('http://numbersapi.com/1/30/date?json')
-    .then((response => {
-     setData(response.data);
-     
-    }), error => {
-      console.log(error);
-  
-    });
-  },[]);
-  import Data from '../components/Data';
-
-  */
-
->>>>>>> e9e4b7b20f4cff9fb9f5840299b2d47b18fe72dc
