@@ -36,23 +36,7 @@ export default function Home({data}) {
 <div className='font-mono  lg:grid grid-cols-2 gap-4  align-middle overflow-hidden  '>
      
 
-     <motion.div className='lg:mt-36'
      
-     
-     initial={{
- 
-      x:-1000,
-         opacity:0,
-       
-    }}
-    animate={{
-      x:0,
-      opacity:1,
-      scale:1,
-    }}
-    transition={{
-      duration:1.5,
-    }}
 
     <motion.div className='lg:mt-36'
     
@@ -100,34 +84,8 @@ export default function Home({data}) {
 
      </motion.div>
 
+ 
 
-
-  
-     >
-       <h1 className='text-xl pb-5   first-letter:text-5xl first-letter:text-cyan-700   underline underline-offset-4'>Let's Train</h1>
-      <p className=' mb-2 '> {data.text}   </p> 
- 
-        
- <span className='mb-4'> {data.type}:</span>
- <p className='inline-block'> {data.year} Year,
- 
- </p>
- <p> Number:{data.number},</p>
- <p>  {!data.found ? (
- <span  className='text-red-600'>Not found</span>
- ):(
- <span>found</span>
- )}</p>
-         
-    
- 
- 
-      <Images/>
- 
-      </motion.div>
- 
- 
-   
  
       <motion.div className=' sm:mt-4  '
       
@@ -161,31 +119,7 @@ export default function Home({data}) {
         />
       </motion.div>
  
-      <motion.div
-      
-      initial={{
- 
-        x:-1000,
-           opacity:0,
-           scale:0.5,
-      }}
-      animate={{
-        x:0,
-        opacity:1,
-        scale:1,
-      }}
-      transition={{
-        duration:1.5,
-      }}
-      
-      
-      
-      >
-       
-      </motion.div>
-      </div>
-
-     </motion.div>
+    
      </div>
     
 
