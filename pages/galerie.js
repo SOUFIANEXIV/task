@@ -14,7 +14,7 @@ const galerie = ({photo}) => {
 {photo.map((photo)=>(
 <div key={photo._id} >
 
- <img src={photo.image}  className="  sm:w-full h-full md:w-56 md:h-52 mx-auto pt-3 " />
+ <img src={photo.image}  className="  sm:w-full h-full md:w-56 md:h-52 mx-auto pt-3 rounded-lg " />
 
 
 </div>
