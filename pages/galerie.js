@@ -29,15 +29,7 @@ const galerie = ({photo}) => {
 export default galerie
 
 
-/*export async function getStaticProps(){
-    const res =  await fetch(`${baseUrl}/api/photo`)
-    const data = await res.json()
-    return {
-      props:{
-       photo:data
-      }
-    }
-   }*/
+
    
    export async function getServerSideProps(){
     const res =  await fetch(`${baseUrl}/api/photo`)
@@ -48,3 +40,13 @@ export default galerie
       }
     }
    }
+
+/*export async function getStaticProps(){
+    const res =  await fetch(`${baseUrl}/api/photo`)
+    const data = await res.json()
+    return {
+      props:{
+       photo:data
+      }
+    }
+   }*/
